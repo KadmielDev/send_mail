@@ -8,7 +8,7 @@ app.use(bodyParser.json()); // Permet de traiter les requêtes JSON
 
 // Configuration CORS
 app.use(cors({
-    origin: ['http://localhost:5000', 'http://localhost:6000'], // Autoriser les requêtes depuis ces origines
+    origin: ['http://localhost:5000', 'http://localhost:6000', 'http://localhost:4200', 'https://send-mail.cloudexpertremote.com'], // Autoriser les requêtes depuis ces origines
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Autoriser ces méthodes
     allowedHeaders: ['Content-Type', 'Authorization'], // Autoriser ces en-têtes
 }));
